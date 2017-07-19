@@ -11899,7 +11899,6 @@ h2.newO {
     left: 0;
     border-bottom: solid 1px #bdbdbd
 }
-
 #orderBox .workList ul li,
 #steps .stepWr .stepContent #alanMetin {
     display: none
@@ -12124,7 +12123,9 @@ h2.newO {
 }
 
 #orderBox .workList ul {
-    margin: 18px 0
+    margin: 18px 0;
+    list-style: none;
+    padding-left: 10px;
 }
 
 #orderBox.payment .workList ul li {
