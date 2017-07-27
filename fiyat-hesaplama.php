@@ -22,12 +22,15 @@ require_once('inc/ayar.php');
 <link href="css/select2.min.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/swiper.min.css">
+
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/animate.css"><!--SLAYT-->
+<link rel="stylesheet" href="css/jquery.fileuploader.css"><!--SLAYT-->
 	<link rel="stylesheet" href="css/app.min.css">
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/animate.css"><!--SLAYT-->
+
 
 <?php include('inc/ust.php') ?>
 <div class="container">
@@ -54,7 +57,7 @@ MoTTo Yeminli Tercüman Firması</p>
                         <div id="steps">
                             <div class="stepWr">
 
-                                        <form action="ahmet.php" method="post" enctype="multipart/form-data">
+                                        <form action="php/form_upload.php" method="post" enctype="multipart/form-data">
                                     <div class="stepContent upload" tabindex="-1">
                                         <div class="stepCount">1</div>
                                         <div class="help"></div>
@@ -63,7 +66,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Belgenizin çeviri fiyatını hesaplamak için lütfen 100MB&#039;den büyük olmayan doc, docx, ppt, pptx, pdf, odt, txt, xls, xlsx, rtf, jpg, jpeg, jpe, png, gif, tif, tiff, bmp uzantılı dokümanınızı yukarıdaki kutucuğu kullanarak seçiniz. Daha sonrasında teslimat süresi ve sipariş tutarı ile ilgili bilgileri inceleyerek sipariş adımları ile devam edebilirsiniz.</p>
                                             </div>
                                         </div>
-                                        <h3>Metin Girişi</h3>
+                                        <h3>METİN GİRİŞİ</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 col-sm-12 uploadType">
                                                 <li class="col-xs-12 col-sm-6 selectedChoise" id="dosyaYukle">Belge Yükle</li>
@@ -81,11 +84,12 @@ MoTTo Yeminli Tercüman Firması</p>
                                         </div>
                                         <div id="alanDosya" class="alanAcik">
                                             <div id="fileInput">
-                                                <div class="form-group">
+                                                         <input type="file" class="fileupp" name="files">
+                                                <!--<div class="form-group">
                                                     <button id="fileUpload" type="button" class="btn btn-primary" >Belgenizi Seçin</button>
                                                     <label for="fileUpload">Birden fazla dosya yükleyebilirsiniz.</label>
                                                     <input type="file" id="hiddenUpload" name="fileUploads[]" class="hidden" multiple>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                         <div id="fileInfo" class="">
@@ -104,7 +108,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Belgeleriniz için almak istediğiniz hizmet tipini seçiniz.</p>
                                             </div>
                                         </div>
-                                        <h3>Ek Hizmet</h3>
+                                        <h3>EK HİZMET</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 workType">                                                                            <li class="col-xs-12 col-sm-6 col-md-4 selectedChoise">
                                                         <label><input type="radio" name="serviceTypeId" value="1" checked="checked">
@@ -127,7 +131,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Belgelerinizin orjinal metin dilini ve çevrilmesini istediğiniz hedef dil veya dilleri seçiniz.</p>
                                             </div>
                                         </div>
-                                        <h3>Dil Seçimi</h3>
+                                        <h3>DİL SEÇİMİ</h3>
                                         <div class="work">
                                             <div class="row">
                                                 <div class="col-xs-12 col-md-12 ">
@@ -249,7 +253,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Sipariş sınıfı seçenekleri, çevirinizi ihtiyaçlarınız doğrultusunda ne kadar deneyimli bir tercümana yaptırmak istediğinizi belirtmenizi sağlar. Ücretlendirme, seçtiğiniz çevirmenin tecrübe seviyesine göre yapılmaktadır.</p>
                                             </div>
                                         </div>
-                                        <h3>Sipariş Türü</h3>
+                                        <h3>SİPARİŞ TÜRÜ</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 col-sm-12 siparisSinifi">                                                             <li class="col-xs-12 col-sm-6 selectedChoise">
                                                         <label>
@@ -275,7 +279,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Acil çeviri ihtiyaçlarınız için &#039;Hızlı Çeviri&#039; seçeneğini işaretleyerek çevirinizin daha hızlı teslim edilmesini sağlayabilirsiniz. Hızlı çeviri hizmeti ek olarak ücretlendirilmektedir. </p>
                                             </div>
                                         </div>
-                                        <h3>Teslimat Hızı</h3>
+                                        <h3>TESLİMAT HIZI</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 col-sm-12 speed">                                                                     <li class="col-xs-12 col-sm-6 selectedChoise">
                                                         <label><input type="radio" name="durationTypeId" value="1" checked="checked">Standart hızda çeviri</label>
@@ -294,7 +298,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Belgeleriniz için dilediğiniz ek hizmetleri aşağıdan seçip siparişinize ekleyebilirsiniz.</p>
                                             </div>
                                         </div>
-                                        <h3>Ek Hizmetler</h3>
+                                        <h3>EK HİZMETLER</h3>
                                         
                                         <div class="work">
                                             <div class="row">
@@ -304,8 +308,8 @@ MoTTo Yeminli Tercüman Firması</p>
                                                             <label for="extraService_1">
                                                                 <input type="checkbox" name="extraService_1" id="extraService_1" value="1" data-price-value="14.0000" data-short-desc="Kargo" data-name="CARGO_DELIVERY" >
                                                                 <span></span>Belgelerimi kargo ile teslim almak istiyorum. 
-                                                                                                                                    <strong class="medium">(+14,00 TL)</strong>
-                                                                                                                            </label>
+                                                            <strong class="medium">(+14,00 TL)</strong>
+                                                                    </label>
                                                         </p>
                                                                                                                                                                     
                                                         <p class="extra-service">
@@ -316,8 +320,8 @@ MoTTo Yeminli Tercüman Firması</p>
                                                         </p>
                                                         
                                                         <p class="extra-service">
-                                                            <label for="extraService_2">
-                                                                <input type="checkbox" name="extraService_2" id="extraService_2" value="2" data-price-value="78.0000" data-short-desc="Noter" data-name="NOTARISATION" >
+                                                            <label for="extraService_3">
+                                                                <input type="checkbox" name="extraService_3" id="extraService_3" value="3" data-price-value="50.0000" data-short-desc="Kase" data-name="NOTARISATION" >
                                                                 <span></span>Yeminli Tercüman Kaşesi İstiyorum 
                                                                                                                             </label>
                                                         </p>
@@ -334,7 +338,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                 <p>Tercümana iletilmesini istediğiniz, belge ve çevirileri ile ilgili taleplerinizi buradan girebilirsiniz.</p>
                                             </div>
                                         </div>
-                                        <h3>Tercümana İletilecek Notlarınız</h3>
+                                        <h3>TERCÜMANA İLETİLECEK NOTLARINIZ</h3>
                                         <div class="work">
                                             <label for="notlar"></label>
                                             <textarea id="notlar" name="description" placeholder="Belgeniz ile ilgili özel taleplerinizi veya ek bilgileri bu kutucuğu doldurarak gönderebilirsiniz."></textarea>
@@ -384,7 +388,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                             Standart hızda çeviri
                                     </li>
                 <li class="trDate" style="display:none">
-                                            Tahmini bitiş: <strong>01.01.1970 02:00</strong>
+                                            Tahmini bitiş: <strong><?php $startDate=strtotime(date("d.m.Y H:i:s")); echo date("d.m.Y H:i:s",strtotime('+1 day', $startDate)); ?></strong>
                                     </li>
             </ul>
         </div>
@@ -424,67 +428,8 @@ MoTTo Yeminli Tercüman Firması</p>
         </div>
     </div>
 
-        <div class="modal fade" id="turkcellModal" role="dialog">
-    <div class="siteBG clearfix">
-        <p class="h1 text-center turkcell">TURKCELL İşteKazan Kampanyası</p>
-        <p class="text-center turkcell">Turkcell kurumsal hat sahipleri için <strong>İşteKazan</strong> kampanyası ile <strong>%25 İndirimli</strong> tercüme hizmeti fırsatı!<br /><br />Aşağıdaki kutucuğa Turkcell kurumsal hat numaranızı girin, kurumsal hattınızın bağlı olduğu cep telefonunuzdan <strong>ISTEKAZAN</strong> yazarak <strong>2222</strong>'ye SMS gönderin, telefonunuza gelen kodu <strong>"İşteKazan Şifresi"</strong> kutucuğuna girdikten sonra <strong>'İndirimi Uygula'</strong> tuşuna bastığınızda %25 indirim otomatik olarak siparişinize uygulanacaktır.</p>
 
-        <form id="kayitForm" class="turkcell" novalidate="novalidate">
-            <div class="form-group col-xs-12 col-sm-6">
-                <span id="telNoWR">
-                    <input class="form-control" id="telNo" name="phone" autocomplete="off" required />
-                    <label for="telNo" class="mate">Telefon</label>
-                </span>
-            </div>
-            <div class="form-group col-xs-12 col-sm-6">
-                <span class="mateWR">
-                    <input class="form-control" id="isteKazan" name="pin" autocomplete="off" required />
-                    <label for="isteKazan" class="label_e_posta mate">İşteKazan Şifresi</label>
-                </span>
-            </div>
-            <div class="form-group text-center col-xs-12">
-                <button class="btn btn-primary" type="submit">İndirimi Uygula</button>
-            </div>
-        </form>
-    </div>
-</div>    
-        <div class="modal fade" id="ptModal" role="dialog">
-    <div class="container siteBG">
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="h1 text-center kupon">Protranslate İndirim Kuponu</p>
-                <p class="text-center kupon">Aşağıdaki kutucuğa indirim kupon kodunuzu giriniz.</p>
-                <form id="kayitForm" class="kupon" novalidate="novalidate">
-                    <div class="form-group kuponKodWR">
-                        <input class="form-control" id="kuponKodu" name="voucherCode"  autocomplete="off" required>
-                        <label for="kuponKodu" class="label_e_posta mate">İndirim Kupon Kodu</label>
-                    </div>
-                    <div class="form-group text-center col-xs-12">
-                        <button class="btn btn-primary" type="submit">Uygula</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>    
-        <div class="modal fade" id="loading" role="dialog">
-    <div class="container siteBG">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="text-center">
-                    <img src="images/progress.gif" alt="Yükleniyor..." />
-                </div>
-                <div>
-                    <p id="loading-text" class="text-center kupon">Aşağıdaki kutucuğa indirim kupon kodunuzu giriniz.</p>
-                </div>
-            </div>
 
-            <div class="action" style="display:none;">
-                <button type="button" class="btn btn-warning pull-right" data-dismiss="modal" aria-label="Close">Kapat</button>
-            </div>
-        </div>
-    </div>
-</div>    
         <div class="modal fade" id="thanksModal" role="dialog" style="display:none;">
     <div class="siteBG half clearfix">
         <div class="row">

@@ -744,3 +744,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);}
 }
 
 .hz_box img{margin: 0px 38px 9px;}
+.fileuploader-theme-onebutton .fileuploader-input {
+    display: inline-block;
+}
+.fileuploader-theme-onebutton .fileuploader-input .fileuploader-input-caption {
+  display: none;
+}
+.fileuploader-item{height: 70px;}
