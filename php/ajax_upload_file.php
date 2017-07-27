@@ -22,5 +22,24 @@
     $data = $FileUploader->upload();
 
 	// export to js
+
+
+
+
+    /*
+		Kelime Analizi
+    */
+////uploads/alxlogo (1).pdf
+			//echo $data["file"];
+			//print_r($data);
+			//echo $data["files"]["0"]["file"];
+
+		
+
+		
+	/*
+		Kelime Analizi
+	*/
+
 	echo json_encode($data);
 	exit;

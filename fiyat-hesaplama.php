@@ -1,7 +1,6 @@
 <?php
 require_once('inc/ayar.php');
 //require_once('inc.class/qryClass.php');
-
 ?>
 <!DOCTYPE html>
 <html>
