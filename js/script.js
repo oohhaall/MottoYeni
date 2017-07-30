@@ -348,7 +348,6 @@ function fiyatHesapla(type,word_count){ /// Dosya ekleme silme ve diğer seçene
 				//var ims = parseInt($(".wordCount strong").html());
 		var words = 0;		
 $(".fileuploader-items-list li").each(function(){
-	console.log($(".fileuploader-action-success",this).attr("data-words"));
 	words += parseInt($(".fileuploader-action-success",this).attr("data-words"));
 });
 	words += parseInt($("#wordCount label").html().trim());
@@ -405,7 +404,6 @@ $("#interpretLanguageId").on("select2:select", function(event) {
 });
 
 $("input[name='qualityTypeId']").on("change",function(){
-		console.log($(this).val());
 		$(".trProf strong").html($(this).val());
 });
 $("input[name='categoryTypeId']").on("change",function(){
@@ -467,6 +465,10 @@ function submit_form(){
 	/*
 fileuploader-list-files
 	*/
+
+	var ims = parseInt($(".wordCount strong").html());
+	console.log(ims);
+	if(ims>0){
 	 var formData = new FormData();
         formData.append("dosya_list",$("input[name='fileuploader-list-files']").val());
         formData.append("ceviri_text",$("#metinGiris").val());
@@ -483,7 +485,7 @@ fileuploader-list-files
             contentType: false, // Set content type to false as jQuery will tell the server its a query string request
             success: function(sonuc, textStatus, jqXHR)
             {
-
+            	alert("Çeviri talebiniz başarıyla alındı");
                 $('body').waitMe('hide');
             },
             error: function(jqXHR, textStatus, errorThrown)
@@ -491,5 +493,9 @@ fileuploader-list-files
               $('body').waitMe('hide');
             }
         });
-
+ }else{
+ 	alert("Lütfen çeviri talebi göndermeden önce çevirilecek bir dosya veya metin girin");
+              $('body').waitMe('hide');
+ 	
+ }
 }

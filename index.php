@@ -25,7 +25,7 @@ require_once('inc/ayar.php');
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/animate.css"><!--SLAYT-->
-<?php include('inc/ust.php')?>
+<?php include('inc/ust.php'); ?>
     <div class="swiper-container">
         <div class="swiper-wrapper">
         
