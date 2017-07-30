@@ -122,6 +122,7 @@ Linkedin'da firmamızı takip edebilirsiniz,
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/select2.min.js"></script>
+<script src="js/waitMe.min.js"></script>
 
 <script src="js/script.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>

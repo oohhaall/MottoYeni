@@ -1,6 +1,7 @@
 <?php
     include('../src/class.fileuploader.php');
-	require_once("../PdfParser/");
+	require_once "../fileread/reader_setup.php";
+
 	// get custom name field
 	$customName = isset($_POST['custom_name']) && !empty($_POST['custom_name']) ? $_POST['custom_name'] : null;
 	
@@ -15,28 +16,17 @@
         'title' => $customName ? $customName : 'name',
 		'replace' => false,
         'listInput' => true,
-        'files' => null
+        'files' => null,
     ));
 	
 	// call to upload the files
     $data = $FileUploader->upload();
-
 	// export to js
-
-
-
 
     /*
 		Kelime Analizi
     */
-////uploads/alxlogo (1).pdf
-			//echo $data["file"];
-			//print_r($data);
-			//echo $data["files"]["0"]["file"];
-
-
-
-
+    $data["files"]["0"]["words"] = word_count($data["files"]["0"]["file"]);
 	/*
 		Kelime Analizi
 	*/

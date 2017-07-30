@@ -751,3 +751,7 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);}
   display: none;
 }
 .fileuploader-item{height: 70px;}
+
+#steps .stepWr .stepContent .work ul li label{font-size: 15px;}
+
+#orderBox .onayla button[disabled]{cursor: pointer;}

@@ -1,3 +1,0 @@
-http://phpword.codeplex.com/
-http://phppowerpoint.codeplex.com/
-https://phpexcel.codeplex.com/

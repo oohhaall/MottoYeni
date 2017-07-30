@@ -1859,7 +1859,7 @@
                       '<ul class="fileuploader-items-list"></ul>' +
                   '</div>',
 			boxAppendTo: null,
-			item: '<li class="fileuploader-item" ondblclick="profilSelect(this)">' +
+			item: '<li class="fileuploader-item">' +
                        '<div class="columns">' +
                            '<div class="column-thumbnail">${image}</div>' +
                            '<div class="column-actions">' +
@@ -1868,7 +1868,7 @@
                        '</div>' +
                        '<div class="progress-bar2">${progressBar}<span></span></div>' +
                    '</li>',
-            item2: '<li class="fileuploader-item" ondblclick="profilSelect(this)">' +
+            item2: '<li class="fileuploader-item">' +
                         '<div class="columns">' +
                             '<a href="${file}" target="_blank">' +
                                 '<div class="column-thumbnail">${image}</div>' +

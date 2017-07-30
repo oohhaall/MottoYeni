@@ -27,6 +27,7 @@ require_once('inc/ayar.php');
 <link rel="stylesheet" href="css/jquery.fileuploader.css"><!--SLAYT-->
 	<link rel="stylesheet" href="css/app.min.css">
 
+<link rel="stylesheet" href="css/waitMe.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 
@@ -62,7 +63,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                         <div class="help"></div>
                                         <div class="helpInfoWR">
                                             <div class="helpInfo">
-                                                <p>Belgenizin çeviri fiyatını hesaplamak için lütfen 100MB&#039;den büyük olmayan doc, docx, ppt, pptx, pdf, odt, txt, xls, xlsx, rtf, jpg, jpeg, jpe, png, gif, tif, tiff, bmp uzantılı dokümanınızı yukarıdaki kutucuğu kullanarak seçiniz. Daha sonrasında teslimat süresi ve sipariş tutarı ile ilgili bilgileri inceleyerek sipariş adımları ile devam edebilirsiniz.</p>
+                                                <p>Belgenizin çeviri fiyatını hesaplamak için lütfen 100MB&#039;den büyük olmayan doc, docx, pdf,txt, xls, xlsx uzantılı dokümanınızı yukarıdaki kutucuğu kullanarak seçiniz. Daha sonrasında teslimat süresi ve sipariş tutarı ile ilgili bilgileri inceleyerek sipariş adımları ile devam edebilirsiniz.</p>
                                             </div>
                                         </div>
                                         <h3>METİN GİRİŞİ</h3>
@@ -98,7 +99,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                 </form>
 
                                                                 
-                                <form action="ahmet2.php" method="post" id="newOrderForm">
+                                <form action="" method="post" id="newOrderForm">
                                     <div class="stepContent" tabindex="-1">
                                         <div class="stepCount">2</div>
                                         <div class="help"></div>
@@ -110,12 +111,12 @@ MoTTo Yeminli Tercüman Firması</p>
                                         <h3>EK HİZMET</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 workType">                                                                            <li class="col-xs-12 col-sm-6 col-md-4 selectedChoise">
-                                                        <label><input type="radio" name="serviceTypeId" value="1" checked="checked">
+                                                        <label><input type="radio" name="serviceTypeId" value="Noter Onaylı" checked="checked">
                                                         Noter Onaylı</label></li>                                                                      <li class="col-xs-12 col-sm-6 col-md-4 ">
-                                                        <label><input type="radio" name="serviceTypeId" value="2" >
+                                                        <label><input type="radio" name="serviceTypeId" value="YM Tercüman Onaylı" >
                                                         YM Tercüman Onaylı</label></li>                    
                                                         <li class="col-xs-12 col-sm-6 col-md-4 ">
-                                                        <label><input type="radio" name="serviceTypeId" value="3" >
+                                                        <label><input type="radio" name="serviceTypeId" value="Apostil Hizmetler" >
                                                         Apostil Hizmetler
                                                         </label></li>
                                                                                             </ul>
@@ -137,71 +138,129 @@ MoTTo Yeminli Tercüman Firması</p>
                                                     <div class="form-group">
                                                         <label for="fileLanguageId">Orijinal Metin Dili</label>
                                                         <select id="fileLanguageId" name="fileLanguageId" class="select2-config">
-                                                                                                                            <option value="3" selected>Türkçe</option>
-                                                                                                                            <option value="4" >İngilizce</option>
-                                                                                                                            <option value="5" >Almanca</option>
-                                                                                                                            <option value="9" >Fransızca</option>
-                                                                                                                            <option value="14" >Rusça</option>
-                                                                                                                            <option value="6" >İspanyolca</option>
-                                                                                                                            <option value="8" >İtalyanca</option>
-                                                                                                                            <option value="32" >Arapça</option>
-                                                                                                                            <option value="57" >Afganca</option>
-                                                                                                                            <option value="51" >Arnavutça</option>
-                                                                                                                            <option value="36" >Azerice</option>
-                                                                                                                            <option value="54" >Boşnakça</option>
-                                                                                                                            <option value="10" >Bulgarca</option>
-                                                                                                                            <option value="30" >Çekçe</option>
-                                                                                                                            <option value="7" >Çince</option>
-                                                                                                                            <option value="18" >Danca</option>
-                                                                                                                            <option value="20" >Endonezce</option>
-                                                                                                                            <option value="33" >Farsça</option>
-                                                                                                                            <option value="22" >Felemenkçe</option>
-                                                                                                                            <option value="24" >Fince</option>
-                                                                                                                            <option value="41" >Gürcüce</option>
-                                                                                                                            <option value="29" >Haitice</option>
-                                                                                                                            <option value="44" >Hintçe</option>
-                                                                                                                            <option value="45" >Hırvatça</option>
-                                                                                                                            <option value="25" >İbranice</option>
-                                                                                                                            <option value="38" >İsveççe</option>
-                                                                                                                            <option value="52" >İzlandaca</option>
-                                                                                                                            <option value="13" >Japonca</option>
-                                                                                                                            <option value="49" >Kazakça</option>
-                                                                                                                            <option value="59" >Khmerce</option>
-                                                                                                                            <option value="56" >Kırgızca</option>
-                                                                                                                            <option value="12" >Korece</option>
-                                                                                                                            <option value="35" >Kürtçe</option>
-                                                                                                                            <option value="40" >Latince</option>
-                                                                                                                            <option value="11" >Lehçe</option>
-                                                                                                                            <option value="15" >Letonyaca</option>
-                                                                                                                            <option value="16" >Litvanca</option>
-                                                                                                                            <option value="17" >Macarca</option>
-                                                                                                                            <option value="48" >Makedonca</option>
-                                                                                                                            <option value="47" >Malayca</option>
-                                                                                                                            <option value="58" >Moldovca</option>
-                                                                                                                            <option value="19" >Norveççe</option>
-                                                                                                                            <option value="34" >Osmanlı Türkçesi</option>
-                                                                                                                            <option value="50" >Özbekçe</option>
-                                                                                                                            <option value="21" >Portekizce</option>
-                                                                                                                            <option value="23" >Romence</option>
-                                                                                                                            <option value="43" >Rumca</option>
-                                                                                                                            <option value="46" >Sırpça</option>
-                                                                                                                            <option value="31" >Slovakça</option>
-                                                                                                                            <option value="53" >Slovence</option>
-                                                                                                                            <option value="42" >Süryanice</option>
-                                                                                                                            <option value="26" >Tayca</option>
-                                                                                                                            <option value="60" >Tibetçe</option>
-                                                                                                                            <option value="39" >Türkmence</option>
-                                                                                                                            <option value="37" >Ukraynaca</option>
-                                                                                                                            <option value="55" >Urduca</option>
-                                                                                                                            <option value="27" >Vietnamca</option>
-                                                                                                                            <option value="28" >Yunanca</option>
-                                                                                                                    </select>
+                                                           <option value="Türkçe" selected="">Türkçe</option>
+<option value="İngilizce" >İngilizce</option>
+<option value="Almanca" >Almanca</option>
+<option value="Fransızca" >Fransızca</option>
+<option value="Rusça" >Rusça</option>
+<option value="İspanyolca" >İspanyolca</option>
+<option value="İtalyanca" >İtalyanca</option>
+<option value="Arapça" >Arapça</option>
+<option value="Afganca" >Afganca</option>
+<option value="Arnavutça" >Arnavutça</option>
+<option value="Azerice" >Azerice</option>
+<option value="Boşnakça" >Boşnakça</option>
+<option value="Bulgarca" >Bulgarca</option>
+<option value="Çekçe" >Çekçe</option>
+<option value="Çince" >Çince</option>
+<option value="Danca" >Danca</option>
+<option value="Endonezce" >Endonezce</option>
+<option value="Farsça" >Farsça</option>
+<option value="Felemenkçe" >Felemenkçe</option>
+<option value="Fince" >Fince</option>
+<option value="Gürcüce" >Gürcüce</option>
+<option value="Haitice" >Haitice</option>
+<option value="Hintçe" >Hintçe</option>
+<option value="Hırvatça" >Hırvatça</option>
+<option value="İbranice" >İbranice</option>
+<option value="İsveççe" >İsveççe</option>
+<option value="İzlandaca" >İzlandaca</option>
+<option value="Japonca" >Japonca</option>
+<option value="Kazakça" >Kazakça</option>
+<option value="Khmerce" >Khmerce</option>
+<option value="Kırgızca" >Kırgızca</option>
+<option value="Korece" >Korece</option>
+<option value="Kürtçe" >Kürtçe</option>
+<option value="Latince" >Latince</option>
+<option value="Lehçe" >Lehçe</option>
+<option value="Letonyaca" >Letonyaca</option>
+<option value="Litvanca" >Litvanca</option>
+<option value="Macarca" >Macarca</option>
+<option value="Makedonca" >Makedonca</option>
+<option value="Malayca" >Malayca</option>
+<option value="Moldovca" >Moldovca</option>
+<option value="Norveççe" >Norveççe</option>
+<option value="Osmanlı Türkçesi" >Osmanlı Türkçesi</option>
+<option value="Özbekçe" >Özbekçe</option>
+<option value="Portekizce" >Portekizce</option>
+<option value="Romence" >Romence</option>
+<option value="Rumca" >Rumca</option>
+<option value="Sırpça" >Sırpça</option>
+<option value="Slovakça" >Slovakça</option>
+<option value="Slovence" >Slovence</option>
+<option value="Süryanice" >Süryanice</option>
+<option value="Tayca" >Tayca</option>
+<option value="Tibetçe" >Tibetçe</option>
+<option value="Türkmence" >Türkmence</option>
+<option value="Ukraynaca" >Ukraynaca</option>
+<option value="Urduca" >Urduca</option>
+<option value="Vietnamca" >Vietnamca</option>
+<option value="Yunanca" >Yunanca</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-md-12 ">
                                                     <div class="form-group">
                                                         <label for="interpretLanguageId">Çeviri Metin Dili</label>
-                                                        <select id="interpretLanguageId" name="interpretLanguageId[]" multiple="multiple" class="select2-config" disabled="disabled">
+                                                        <select id="interpretLanguageId" name="interpretLanguageId[]" multiple="multiple">
+                                                           <option value="Türkçe" selected="">Türkçe</option>
+<option value="İngilizce" >İngilizce</option>
+<option value="Almanca" >Almanca</option>
+<option value="Fransızca" >Fransızca</option>
+<option value="Rusça" >Rusça</option>
+<option value="İspanyolca" >İspanyolca</option>
+<option value="İtalyanca" >İtalyanca</option>
+<option value="Arapça" >Arapça</option>
+<option value="Afganca" >Afganca</option>
+<option value="Arnavutça" >Arnavutça</option>
+<option value="Azerice" >Azerice</option>
+<option value="Boşnakça" >Boşnakça</option>
+<option value="Bulgarca" >Bulgarca</option>
+<option value="Çekçe" >Çekçe</option>
+<option value="Çince" >Çince</option>
+<option value="Danca" >Danca</option>
+<option value="Endonezce" >Endonezce</option>
+<option value="Farsça" >Farsça</option>
+<option value="Felemenkçe" >Felemenkçe</option>
+<option value="Fince" >Fince</option>
+<option value="Gürcüce" >Gürcüce</option>
+<option value="Haitice" >Haitice</option>
+<option value="Hintçe" >Hintçe</option>
+<option value="Hırvatça" >Hırvatça</option>
+<option value="İbranice" >İbranice</option>
+<option value="İsveççe" >İsveççe</option>
+<option value="İzlandaca" >İzlandaca</option>
+<option value="Japonca" >Japonca</option>
+<option value="Kazakça" >Kazakça</option>
+<option value="Khmerce" >Khmerce</option>
+<option value="Kırgızca" >Kırgızca</option>
+<option value="Korece" >Korece</option>
+<option value="Kürtçe" >Kürtçe</option>
+<option value="Latince" >Latince</option>
+<option value="Lehçe" >Lehçe</option>
+<option value="Letonyaca" >Letonyaca</option>
+<option value="Litvanca" >Litvanca</option>
+<option value="Macarca" >Macarca</option>
+<option value="Makedonca" >Makedonca</option>
+<option value="Malayca" >Malayca</option>
+<option value="Moldovca" >Moldovca</option>
+<option value="Norveççe" >Norveççe</option>
+<option value="Osmanlı Türkçesi" >Osmanlı Türkçesi</option>
+<option value="Özbekçe" >Özbekçe</option>
+<option value="Portekizce" >Portekizce</option>
+<option value="Romence" >Romence</option>
+<option value="Rumca" >Rumca</option>
+<option value="Sırpça" >Sırpça</option>
+<option value="Slovakça" >Slovakça</option>
+<option value="Slovence" >Slovence</option>
+<option value="Süryanice" >Süryanice</option>
+<option value="Tayca" >Tayca</option>
+<option value="Tibetçe" >Tibetçe</option>
+<option value="Türkmence" >Türkmence</option>
+<option value="Ukraynaca" >Ukraynaca</option>
+<option value="Urduca" >Urduca</option>
+<option value="Vietnamca" >Vietnamca</option>
+<option value="Yunanca" >Yunanca</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -209,7 +268,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                         </div>
                                     </div>
 
-                                                                        <div class="stepContent" tabindex="-1">
+                                       <div class="stepContent" tabindex="-1">
                                         <div class="stepCount">4</div>
                                         <div class="help"></div>
                                         <div class="helpInfoWR">
@@ -222,23 +281,23 @@ MoTTo Yeminli Tercüman Firması</p>
                                             <ul class="col-xs-12 uzmanlik">
                                                                                                                                                         
                                                     <li class="col-xs-12 col-sm-6 selectedChoise">
-                                                        <label><input type="radio" name="qualityTypeId" value="1" checked="checked"><div class="img standart"></div>Genel</label>
+                                                        <label><input type="radio" name="qualityTypeId" value="Genel" checked="checked"><div class="img standart"></div>Genel</label>
                                                     </li>
                                                                                                                                                         
                                                     <li class="col-xs-12 col-sm-6 ">
-                                                        <label><input type="radio" name="qualityTypeId" value="2" ><div class="img legal"></div>Hukuki</label>
+                                                        <label><input type="radio" name="qualityTypeId" value="Hukuki" ><div class="img legal"></div>Hukuki</label>
                                                     </li>
                                                                                                                                                         
                                                     <li class="col-xs-12 col-sm-6 ">
-                                                        <label><input type="radio" name="qualityTypeId" value="3" ><div class="img medical"></div>Medikal</label>
+                                                        <label><input type="radio" name="qualityTypeId" value="Medikal" ><div class="img medical"></div>Medikal</label>
                                                     </li>
                                                                                                                                                         
                                                     <li class="col-xs-12 col-sm-6 ">
-                                                        <label><input type="radio" name="qualityTypeId" value="4" ><div class="img technical"></div>Teknik</label>
+                                                        <label><input type="radio" name="qualityTypeId" value="Teknik" ><div class="img technical"></div>Teknik</label>
                                                     </li>
                                                                                                                                                         
                                                     <li class="col-xs-12 col-sm-6 ">
-                                                        <label><input type="radio" name="qualityTypeId" value="5" ><div class="img patent"></div>Akademik</label>
+                                                        <label><input type="radio" name="qualityTypeId" value="Akademik" ><div class="img patent"></div>Akademik</label>
                                                     </li>
                                                                                             </ul>
                                         </div>
@@ -256,12 +315,12 @@ MoTTo Yeminli Tercüman Firması</p>
                                         <div class="work">
                                             <ul class="col-xs-12 col-sm-12 siparisSinifi">                                                             <li class="col-xs-12 col-sm-6 selectedChoise">
                                                         <label>
-                                                            <input type="radio" name="categoryTypeId" value="1" checked="checked" data-name="PROFESSIONAL_INTERPRETER" >
+                                                            <input type="radio" name="categoryTypeId" value="Profesyonel Tercüman" checked="checked" data-name="PROFESSIONAL_INTERPRETER" >
                                                             Profesyonel Tercüman
                                                         </label>
                                                     </li>                                                                                              <li class="col-xs-12 col-sm-6 ">
                                                         <label>
-                                                            <input type="radio" name="categoryTypeId" value="2"  data-name="CERTIFIED_INTERPRETER" >
+                                                            <input type="radio" name="categoryTypeId" value="Yeminli Tercüman"  data-name="CERTIFIED_INTERPRETER" >
                                                             Yeminli Tercüman
                                                         </label>
                                                     </li>
@@ -281,9 +340,9 @@ MoTTo Yeminli Tercüman Firması</p>
                                         <h3>TESLİMAT HIZI</h3>
                                         <div class="work">
                                             <ul class="col-xs-12 col-sm-12 speed">                                                                     <li class="col-xs-12 col-sm-6 selectedChoise">
-                                                        <label><input type="radio" name="durationTypeId" value="1" checked="checked">Standart hızda çeviri</label>
+                                                        <label><input type="radio" name="durationTypeId" value="Standart hızda çeviri" checked="checked">Standart hızda çeviri</label>
                                                     </li>                                                                                              <li class="col-xs-12 col-sm-6 ">
-                                                        <label><input type="radio" name="durationTypeId" value="2" >Hızlı çeviri</label>
+                                                        <label><input type="radio" name="durationTypeId" value="Hızlı çeviri" >Hızlı çeviri</label>
                                                     </li>
                                              </ul>
                                         </div>
@@ -305,7 +364,7 @@ MoTTo Yeminli Tercüman Firması</p>
                                                                                                                                                                     
                                                         <p class="extra-service">
                                                             <label for="extraService_1">
-                                                                <input type="checkbox" name="extraService_1" id="extraService_1" value="1" data-price-value="14.0000" data-short-desc="Kargo" data-name="CARGO_DELIVERY" >
+                                                                <input type="checkbox" name="extraService_1" id="extraService_1" value="1" data-price-value="14.00" data-short-desc="Kargo" data-name="CARGO_DELIVERY" >
                                                                 <span></span>Belgelerimi kargo ile teslim almak istiyorum. 
                                                             <strong class="medium">(+14,00 TL)</strong>
                                                                     </label>
@@ -313,14 +372,14 @@ MoTTo Yeminli Tercüman Firması</p>
                                                                                                                                                                     
                                                         <p class="extra-service">
                                                             <label for="extraService_2">
-                                                                <input type="checkbox" name="extraService_2" id="extraService_2" value="2" data-price-value="78.0000" data-short-desc="Noter" data-name="NOTARISATION" >
+                                                                <input type="checkbox" name="extraService_2" id="extraService_2" value="2" data-price-value="78.00" data-short-desc="Noter" data-name="NOTARISATION" >
                                                                 <span></span>Belgelerim için Noter Onayı istiyorum. 
                                                                                                                             </label>
                                                         </p>
                                                         
                                                         <p class="extra-service">
                                                             <label for="extraService_3">
-                                                                <input type="checkbox" name="extraService_3" id="extraService_3" value="3" data-price-value="50.0000" data-short-desc="Kase" data-name="NOTARISATION" >
+                                                                <input type="checkbox" name="extraService_3" id="extraService_3" value="3" data-price-value="50.00" data-short-desc="Kase" data-name="NOTARISATION" >
                                                                 <span></span>Yeminli Tercüman Kaşesi İstiyorum 
                                                                                                                             </label>
                                                         </p>
@@ -370,7 +429,7 @@ MoTTo Yeminli Tercüman Firması</p>
         <div class="workList">
             <ul>
                 <li class="wordCount" style="display:none">
-                                            Kelime Sayısı: <strong></strong>
+                                            Kelime Sayısı: <strong>0</strong>
                                     </li>
                                                 <li class="trLanguages" style="display:none">
                                             Çeviri Dilleri: <strong>
@@ -418,7 +477,7 @@ MoTTo Yeminli Tercüman Firması</p>
         </div>
         
                 <div class="onayla text-center">
-            <button type="button" disabled="disabled" data-defaulttext="Devam Et" data-manualordertext="Hemen Teklif Al">Devam Et</button>
+            <button type="button" data-defaulttext="Devam Et" onclick="submit_form()" data-manualordertext="Hemen Teklif Al">Devam Et</button>
         </div>
             </div>
 </div>                    </div>
