@@ -26,8 +26,8 @@ if (!isset($_SESSION)){session_start();}
 
     final class DB extends Database_Object
     {
-        //public static function Open($database = "motto", $hostname = "89.19.29.114", $hostport = "3306", $username = "motto", $password = "NOrd51U0")
-	   public static function Open($database = "motto", $hostname = "localhost", $hostport = "3306", $username = "root", $password = "")
+        public static function Open($database = "motto", $hostname = "89.19.29.114", $hostport = "3306", $username = "motto", $password = "NOrd51U0")
+	   // public static function Open($database = "motto", $hostname = "localhost", $hostport = "3306", $username = "root", $password = "")
         {
             if (!self::$DB_Open)
             {
